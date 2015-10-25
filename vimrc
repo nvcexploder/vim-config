@@ -21,6 +21,7 @@ set cursorline             " Draw a line under the active cursor line
 set lazyredraw             " Don't redraw screen while executing macros/registers/untyped commands
 set colorcolumn=80         " Highlight the 80th column
 set hlsearch               " Highlight previous search pattern matches
+colorscheme github         " Use modified github colorscheme
 
 " buffer behavior
 set hidden                 " Don't abandon unsaved buffer when switching to another buffer
