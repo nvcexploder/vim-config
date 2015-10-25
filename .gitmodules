@@ -25,3 +25,6 @@
 [submodule "vim/bundle/vim-github-colorscheme"]
 	path = vim/bundle/vim-github-colorscheme
 	url = git://github.com/krishicks/vim-github-colorscheme.git
+[submodule "vim/bundle/vim-cdo"]
+	path = vim/bundle/vim-cdo
+	url = git://github.com/peeja/vim-cdo.git
