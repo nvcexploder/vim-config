@@ -2,9 +2,23 @@
 
 Because everyone else's vim config has too much cruft and too many toys.
 
-This config will always be fast. It doesn't use fancy plugin managers (e.g.
-Plug.vim, NeoBundle.vim, Vundle), and it will always be documented so you know
-what each bit of configuration does.
+## About
+
+This config will always be fast:
+
+* Fast to open a file
+* Fast while moving around a buffer
+* Fast to save a buffer
+
+Additionally:
+
+* Every piece of configuration is documented so you know what it does
+* It is as stripped-down as it can be while still being very functional for
+  development
+* It doesn't require an install script (and therefore doesn't modify any of
+  your files)
+* It doesn't use any fancy plugin managers (e.g. Vundle, Plug.vim,
+  NeoBundle.vim)
 
 ## Installation
 
