@@ -12,3 +12,7 @@ git submodule update --init
 ln -s $PWD/vimrc ~/.vimrc
 ln -s $PWD/vim ~/.vim
 ```
+
+## Notes
+
+* This config uses [vim-pathogen](https://github.com/tpope/vim-pathogen) for managing plugins
