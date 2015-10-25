@@ -16,3 +16,6 @@
 [submodule "vim/bundle/vim-go"]
 	path = vim/bundle/vim-go
 	url = git://github.com/fatih/vim-go.git
+[submodule "vim/bundle/vim-togglecursor"]
+	path = vim/bundle/vim-togglecursor
+	url = git://github.com/jszakmeister/vim-togglecursor.git
