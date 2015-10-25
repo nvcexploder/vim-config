@@ -16,3 +16,5 @@ ln -s $PWD/vim ~/.vim
 ## Notes
 
 * This config uses [vim-pathogen](https://github.com/tpope/vim-pathogen) for managing plugins
+* mapleader is set to ","
+* If you have [ack](http://beyondgrep.com/) installed, `ack` will be used in place of `grep`
