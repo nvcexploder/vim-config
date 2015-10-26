@@ -10,8 +10,8 @@ set splitbelow             " split new windows below
 
 " history
 if has('persistent_undo')
-	set undofile             " Save history to undofile
-	set undodir=~/.vim/.undo " undofiles location
+  set undofile             " Save history to undofile
+  set undodir=~/.vim/.undo " undofiles location
 endif
 
 " visual
