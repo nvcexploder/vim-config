@@ -1,2 +1,7 @@
+# netrwhist
 .cache/
 .netrwhist
+
+# undo
+vim/.undo/*
+!vim/.undo/.gitkeep
