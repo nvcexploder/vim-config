@@ -14,6 +14,10 @@ if has('persistent_undo')
   set undodir=~/.vim/.undo " undofiles location
 endif
 
+" swap
+set directory-=.           " Don't put swap files in '.'
+set backupdir-=.           " Don't put backup files in '.'
+
 " visual
 set nu 	                   " Show line numbers
 set nowrap                 " Don't wrap lines
