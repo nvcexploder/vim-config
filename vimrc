@@ -45,6 +45,7 @@ endif
 let g:mapleader=","            " Set leader to comma, defaults to \
 nnoremap \ :NERDTreeToggle<CR> " Toggle NERDTree
 nnoremap \| :NERDTreeFind<CR>  " Open NERDTree to current file
+nnoremap Y y$                  " Make Y yank from the cursor to the end of line
 
 " Close vim if the only window left open is a NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
