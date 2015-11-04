@@ -52,3 +52,6 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 
 " vim-go
 let g:go_fmt_command = "goimports" " Run goimports rather than gofmt
+
+" syntastic
+let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': [],'passive_filetypes': [] } " Disable by default; run :SyntasticCheck instead
