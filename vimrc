@@ -49,3 +49,6 @@ nnoremap Y y$                  " Make Y yank from the cursor to the end of line
 
 " Close vim if the only window left open is a NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
+" vim-go
+let g:go_fmt_command = "goimports" " Run goimports rather than gofmt
