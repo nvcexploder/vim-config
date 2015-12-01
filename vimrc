@@ -55,3 +55,6 @@ let g:go_fmt_command = "goimports" " Run goimports rather than gofmt
 
 " syntastic
 let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': [],'passive_filetypes': [] } " Disable by default; run :SyntasticCheck instead
+
+" mouse
+set mouse=a " Enable the use of the mouse
