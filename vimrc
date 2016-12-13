@@ -42,7 +42,6 @@ if executable('ack')
 endif
 
 " mappings
-let g:mapleader=","            " Set leader to comma, defaults to \
 nnoremap \ :NERDTreeToggle<CR> " Toggle NERDTree
 nnoremap \| :NERDTreeFind<CR>  " Open NERDTree to current file
 nnoremap Y y$                  " Make Y yank from the cursor to the end of line
