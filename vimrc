@@ -4,9 +4,13 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
+" shell
+set shell=/bin/bash        " force shell to bash when executing stuff
+
 " window behavior
 set splitright             " v-split new windows to the right
 set splitbelow             " split new windows below
+set mouse=a                " enable mouse
 
 " history
 if has('persistent_undo')
@@ -19,13 +23,15 @@ set directory-=.           " Don't put swap files in '.'
 set backupdir-=.           " Don't put backup files in '.'
 
 " visual
-set nu 	                   " Show line numbers
+set number 	               " Show line numbers
 set nowrap                 " Don't wrap lines
 set cursorline             " Draw a line under the active cursor line
 set lazyredraw             " Don't redraw screen while executing macros/registers/untyped commands
-set colorcolumn=80         " Highlight the 80th column
 set hlsearch               " Highlight previous search pattern matches
-colorscheme github         " Use modified github colorscheme
+set scrolloff=3            " show extra context when nearing vertical screen borders
+set sidescrolloff=5        " show extra context when nearing vertical screen borders
+set foldlevelstart=99      " don't auto-fold
+" colorscheme github         " Use modified github colorscheme
 
 " buffer behavior
 set hidden                 " Don't abandon unsaved buffer when switching to another buffer
@@ -45,6 +51,7 @@ endif
 nnoremap \ :NERDTreeToggle<CR> " Toggle NERDTree
 nnoremap \| :NERDTreeFind<CR>  " Open NERDTree to current file
 nnoremap Y y$                  " Make Y yank from the cursor to the end of line
+nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>"" " clear highlights on space
 
 " Close vim if the only window left open is a NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
@@ -56,5 +63,3 @@ let g:go_fmt_command = "goimports" " Run goimports rather than gofmt
 " syntastic
 let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': [],'passive_filetypes': [] } " Disable by default; run :SyntasticCheck instead
 
-" mouse
-set mouse=a " Enable the use of the mouse
