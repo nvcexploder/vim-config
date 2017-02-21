@@ -46,3 +46,6 @@
 [submodule "vim/bundle/ag.vim"]
 	path = vim/bundle/ag.vim
 	url = https://github.com/rking/ag.vim
+[submodule "vim/bundle/neomake"]
+	path = vim/bundle/neomake
+	url = git@github.com:neomake/neomake.git

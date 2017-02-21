@@ -56,10 +56,13 @@ nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>"" " clear highlights on spac
 " Close vim if the only window left open is a NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
-" vim-go
-let g:go_fmt_command = "goimports" " Run goimports rather than gofmt
-" let g:go_auto_sameids = 1          " Automatically run 'guru what' under cursor
-
 " syntastic
 let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': [],'passive_filetypes': [] } " Disable by default; run :SyntasticCheck instead
 
+" load language-specific configuration
+runtime! lang/*.vim
+
+" neomake
+" open list automatically but preserve cursor position
+let g:neomake_open_list = 2
+let g:neomake_list_height = 5
